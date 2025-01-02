@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordplay - Sign In & Sign Up</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        .heading {
+            font-size: 2rem;
+            color: #6c63ff;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .quote {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        form input {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #6c63ff;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #554bdb;
+        }
+        a {
+            display: block;
+            margin-top: 15px;
+            color: #6c63ff;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .img {
+            height: 70px; 
+            vertical-align: middle; 
+            margin-left: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="signin">
+        <h1 class="heading">
+            WORDPLAY
+            <img class="img" src="books1.jpg" alt="Wordplay Logo">
+        </h1>
+        <h2 class="text">Sign In</h2>
+        <p class="quote">Welcome back to reading your favourite books!</p>
+        <form>
+            <div><input type="text" placeholder="Username"></div>
+            <div><input type="password" placeholder="Password"></div>
+            <div><button type="submit">Sign in</button></div>
+            <a href="#signup">Don't have an account? Sign up</a>
+        </form>
+    </div>
+
+    <div class="box" id="signup" style="display:none">
+        <h1 class="heading">
+            WORDPLAY
+            <img class="img" src="books1.jpg" alt="Wordplay Logo">
+        </h1>
+        <h2 class="text">Sign Up</h2>
+        <form>
+            <div><input type="text" placeholder="Username"></div>
+            <div><input type="email" placeholder="Enter your email id"></div>
+            <div><input type="password" placeholder="Password"></div>
+            <div><button type="submit">Sign up</button></div>
+            <a href="#signin">Already have an account? Sign In</a>
+        </form>
+    </div>
+
+    <script>
+        const signInForm = document.getElementById('signin');
+        const signUpForm = document.getElementById('signup');
+
+        document.querySelectorAll('a[href="#signup"]').forEach(link => {
+            link.addEventListener('click', () => {
+                signInForm.style.display = 'none';
+                signUpForm.style.display = 'block';
+            });
+        });
+
+        document.querySelectorAll('a[href="#signin"]').forEach(link => {
+            link.addEventListener('click', () => {
+                signUpForm.style.display = 'none';
+                signInForm.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
