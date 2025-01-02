@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)file:///C:/Users/ARYAC/OneDrive/html%20and%20css/Wordplay%20-%20Online%20Bookstore.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordplay - Online Bookstore</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+            color: #333;
+        }
+        header {
+            background-color: #6c63ff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        .container h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #4a4a4a;
+        }
+        .container p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #555;
+            line-height: 1.5;
+        }
+        .login-btn {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #6c63ff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            
+        }
+        .login-btn:hover {
+            background-color: #554bdb;
+            transform: translateY(-2px);
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        #about {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .about1 {
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .about1:hover {
+            transform: translateY(-5px);
+        }
+        .about1 h3 {
+            color: #6c63ff;
+            margin-bottom: 10px;
+        }
+        .about1 p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #777;
+            font-size: 0.9rem;
+            border-top: 2px solid #ddd;
+        }
+        .contact-section {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact-details p {
+            font-size: 1rem;
+            margin: 10px 0;
+            color: #333;
+        }
+        .contact-details a {
+            color: #6c63ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #6c63ff;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #554bdb;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Wordplay</h1>
+    <nav>
+        <a href="file:///C:/Users/ARYAC/OneDrive/html%20and%20css/site.html#">Home</a>
+        <a href="file:///C:/Users/ARYAC/OneDrive/html%20and%20css/site.html#about">About</a>
+        <a href="file:///C:/Users/ARYAC/OneDrive/html%20and%20css/site.html#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Your Gateway to Knowledge</h2>
+    <p>Discover a world of knowledge and imagination with our extensive collection of books. From timeless classics to modern bestsellers, we have it all here.</p>
+    <button class="login-btn" onclick="location.href=&#39;index.html&#39;">Login / Sign Up</button>
+</div>
+
+<section id="about">
+    <div class="about1">
+        <h3>Our goal</h3>
+        <p>To bring the joy of reading to everyone by offering an extensive collection of books and creating a community of book enthusiasts.</p>
+    </div>
+    <div class="about1">
+        <h3>Our Collection</h3>
+        <p>From gripping mysteries to heartwarming comics, we have everything you may prefer.</p>
+    </div>
+    <div class="about1">
+        <h3>Why Wordplay?</h3>
+        <p>We believe in the transformative power of books and are dedicated to making them accessible to all.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out to us via email or Instagram, or leave a comment below.</p>
+        <div class="contact-details">
+            <p><strong>Email:</strong>wordplayhere@gmail.com</p>
+            <p><strong>Instagram:</strong> @wearewordplay</p>
+        </div>
+        <form class="contact-form">
+            <label for="comment">Your Comment</label>
+            <textarea id="comment" name="comment" placeholder="Add a comment or query" required=""></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>Wordplay . All rights reserved.</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
